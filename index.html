@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Due-X</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">		
+		<link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
+	</head>
+	<body>
+		<div id="subscribe-modal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-body ">
+						<h3 class="modal-title text-center">Subscribe</h3>
+						<p class= "text-center">Subscribe to our newsletter and stay updated</p>
+						<div class="text-center">
+							<img class="img-fluid" alt="Responsive image"  src="assets/images/Group.png">
+						</div>
+						<br>
+						<form class="subscribe_form">
+							<!-- <div class="input-group success">
+								<input type="text" class="form-control is-valid" placeholder="example@gmail.com">
+								<div class="input-group-addon label-success">
+									<span class="input-group-text">Thank you</span>
+								</div>
+							</div> -->
+							<br>
+							<div class="input-group fail">
+								<input type="text" class="form-control is-invalid" placeholder="Failed, please try again.">
+								<div class="input-group-addon label-primary">
+									<span class="input-group-text ">Get Updates</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End subscribe modal-->
+
+		<div id="portfolio-modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="modal-body">
+						<p>դիզայն չկա</p>
+						<img src="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End portfolio modal-->
+
+		<div id="help">
+			<a href="#" tabindex="0">	
+				<span class="message"><i class="far fa-comment-alt"></i></span>
+				<span class="dot"><i class="fas fa-circle"></i></span>
+			</a>	
+			<div class="help-window">
+				<h4>Help and Support</h4>
+				<h5>Lorem Ipsum</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h5>Lorem Ipsum</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<button>See more</button>
+			</div>	
+		</div>
+		<!-- End Help button -->
+		
+		<header class="header navbar-fixed-top ">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a href="./index.html" class="navbar-brand"><img src="assets/images/logo.jpg"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-left custom-navigation">
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right custom-navigation">
+							<li><div class="btn-primary" role="button" data-toggle="modal" data-target="#subscribe-modal">Subscribe</div></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+			</nav>
+		</header>
+		<!-- End header -->   
+
+	<div class="parallax-container">
+		<div  id="carousel-example-generic" class="carousel slide carousel-section" data-ride="carousel"  data-interval="5000">
+			<!-- Indicators -->
+			<ol class="carousel-indicators" >
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="assets/images/home.png">
+					<div class="carousel-caption">
+						<h1>Create value of business<br>Automate & Control</h1>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing<br>and typesetting industry. Lorem Ipsum has been<br>the industry's standard dummy text ever since.
+						</p>
+						<div class="btn-primary" role="button">Get Started</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="assets/images/home.png">
+					<div class="carousel-caption">
+						<h1>Create value of business<br>Automate & Control</h1>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing<br>and typesetting industry. Lorem Ipsum has been<br>the industry's standard dummy text ever since.
+						</p>
+						<div class="btn-primary" role="button">Get Started</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="assets/images/home.png">
+					<div class="carousel-caption">
+						<h1>Create value of business<br>Automate & Control</h1>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing<br>and typesetting industry. Lorem Ipsum has been<br>the industry's standard dummy text ever since.
+						</p>
+					<div class="btn-primary" role="button">Get Started</div>
+					</div>
+				</div>
+				<!-- Control-->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-chevron-left"></i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-chevron-right"></i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>	
+		<!-- End Carousel-->	
+		<div class="parallax bg1"></div>
+	</div>
+
+	<div class="parallax-container">
+		<section id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="about-content">
+								<h2>About us</h2>
+								<article>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+										industry's standard dummy text ever since and typesetting industry. Lorem Ipsum has been.
+									</p>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+										industry's standard dummy text ever since.
+									</p>
+									<article>
+										</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="about-img">
+								<img src="./assets/images/about/cube-1-shadow.png" class="cube-1-shadow">
+								<img src="./assets/images/about/cube-1.png" class="cube-1">
+								<img src="./assets/images/about/note.png" class="note">							
+								<img src="./assets/images/about/cube-2-shadow.png" class="cube-2-shadow">
+								<img src="./assets/images/about/cube-2.png" class="cube-2">
+								<img src="./assets/images/about/cube-3-shadow.png" class="cube-3-shadow">
+								<img src="./assets/images/about/cube-3.png" class="cube-3">
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!-- End About-->
+		<div class="parallax"></div>
+	</div>
+
+	<div class="parallax-container">
+		<div class="container">
+			<section id="services">
+				<h2>Services</h2>
+				<p class="services-content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquid iure a reiciendis assumenda? Laborum dolorem sint placeat commodi quaerat!
+				</p>
+				<div class="services-box">
+					<div id="services-container" class="col-md-6 col-sm-8">
+						<div class="services-item">
+							<div class="card">
+								<div class="card-side">
+									<img src="./assets/images/services/cards/branding.png">
+									<span>Branding</span>
+								</div>
+								<div class="card-back">
+									<form class="card-back-form">
+										<input type="checkbox" id="1">
+										<label for="1">aa</label><br>
+										<input type="checkbox" id="2">
+										<label for="2">bb</label><br>
+										<input type="checkbox" id="3">
+										<label for="3">cc</label><br>
+										<input type="checkbox" id="4">
+										<label for="4">dd</label><br>
+										<input type="checkbox" id="5">
+										<label for="5">ee</label>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="services-item">
+							<div class="card">
+								<div class="card-side">
+									<img src="./assets/images/services/cards/graphic_design.png">
+									<span>Graphic Design</span>
+								</div>
+								<div class="card-back">
+									<form class="card-back-form">
+										<input type="checkbox" id="11">
+										<label for="11">aaa</label><br>
+										<input type="checkbox" id="22">
+										<label for="22">bbb</label><br>
+										<input type="checkbox" id="33">
+										<label for="33">ccc</label><br>
+										<input type="checkbox" id="44">
+										<label for="44">ddd</label><br>
+										<input type="checkbox" id="55">
+										<label for="55">eee</label>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="services-item">
+							<div class="card">
+								<div class="card-side">
+									<img src="./assets/images/services/cards/uiux_design.png">
+									<span>UI/UX Design</span>
+								</div>
+								<div class="card-back">
+									<form class="card-back-form">
+										<input type="checkbox" id="111">
+										<label for="111">Web</label><br>
+										<input type="checkbox" id="222">
+										<label for="222">Android</label><br>
+										<input type="checkbox" id="333">
+										<label for="333">IOS App</label><br>
+										<input type="checkbox" id="444">
+										<label for="444">UI Design</label><br>
+										<input type="checkbox" id="555">
+										<label for="555">UX Design</label>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="services-item">
+							<div class="card">
+								<div class="card-side">
+									<img src="./assets/images/services/cards/motion_design.png">
+									<span>Motion Design</span>
+								</div>
+								<div class="card-back">
+									<form class="card-back-form">
+										<input type="checkbox" id="1111">
+										<label for="1111">Web</label><br>
+										<input type="checkbox" id="2221">
+										<label for="2221">Android</label><br>
+										<input type="checkbox" id="3331">
+										<label for="3331">IOS App</label><br>
+										<input type="checkbox" id="4441">
+										<label for="4441">UI Design</label><br>
+										<input type="checkbox" id="5551">
+										<label for="5551">UX Design</label>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="services-item">
+							<div class="card">
+								<div class="card-side">
+									<img src="./assets/images/services/cards/software_dev.png">
+									<span>Software Development</span>
+								</div>
+								<div class="card-back"></div>
+							</div>
+						</div>
+						<div class="services-item">
+							<div class="card">
+								<div class="card-side">
+									<img src="./assets/images/services/cards/wordpress.png">
+									<span>CMS Wordpress Development</span>
+								</div>
+								<div class="card-back"></div>
+							</div>
+						</div>
+					</div>
+					<div id="form-container" class="vcenter col-md-6 col-sm-4">
+						<form>
+							<div class="ranges">
+								<div class="budget">
+									<label for="budget">Budget</label>
+									<div id="slider-range-min-budget"></div>
+									<input type="text" id="budget" readonly>
+								</div>
+								<div class="deadline">
+									<label for="deatline">Deadline</label>
+									<div id="slider-range-min-deatline"></div>
+									<input type="text" id="deatline" readonly>
+								</div>
+								<div class="order">
+									<input type="submit" value="Order">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- End Services-->
+		<div class="parallax" id="bg3"></div>
+	</div>
+
+	<div class="parallax-container">
+		<div class="container">
+			<section id="portfolio">
+				<h2>Portfolio</h2>
+				<p class="portfolio-content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquid iure a reiciendis assumenda? Laborum dolorem sint placeat commodi quaerat!
+				</p>
+				<div id="portfolio-tabs">
+					<div class="portfolio-items">
+						<ul class="short-items">
+							<li><a rel="#tab-1">Branding</a></li>
+							<li><a rel="#tab-2">UI/UX Design</a></li>
+							<li><a rel="#tab-3">Graphic Design</a></li>
+							<li><a rel="#tab-4">Motion Design</a></li>
+							<li><a rel="#tab-5">3D Design</a></li>
+						</ul>
+						<ul class="long-items">
+							<li><a rel="#tab-6">Web Development</a></li>
+							<li><a rel="#tab-7">Mobile development</a></li>
+						</ul>
+					</div>
+					<div class="portfolio-tab-container">
+						<!-- here tab content from js -->
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- End Portfolio-->
+		<div class="parallax"></div>
+	</div>
+
+	<div class="parallax-container">
+		<section id="contact">
+				<div class="contact_info">
+					<div class="container">
+						<div class="col-xs-7   left_section">
+							<h2>Contact Us</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nobis quo, tempora repellat? Voluptates iure architecto assumenda, optio magnam debitis eos libero, sequi quo! Repellat, nihil expedita quae rem iste.</p>
+							<h3>Need Help?</h3>
+							<address>info@due-x.com</address>
+							<h3>Call us</h3>
+							<address>+374 12 345 678</address>
+							<h3>Visit us</h3>
+							<address>
+								<p>Armenia, Yerevan, Sasuntsi Davit 2rd square</p>
+								<p>Armenia, Gyumri, Street name</p>
+							</address>
+						</div>
+						<div class="col-xs-5   right_section">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="E-mail">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control textarea" id="exampleFormControlTextarea1" rows="5" cols="10" placeholder="Message ..."></textarea>
+								</div>
+								<button type="button" class="btn btn-default">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div class="first-footer">
+						<div class="container">
+							<div class="col-sm-3 col-xs-12 ">
+								<h3>Due-X</h3>
+								<p class="foot-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
+							</div>
+							<div class="col-sm-2 col-xs-4  top" class="foot-links">
+								<h4>Navigation</h4>
+								<ul>
+									<li><a href="#"> About Us</a></li>
+									<li><a href="#"> News</a></li>
+									<li><a href="#"> Support</a></li>
+									<li><a href="#"> Products</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-2 col-xs-4  top" class="foot-links">
+								<h4>About Us</h4>
+								<ul>
+									<li><a href="#"> Who we are</a></li>
+									<li><a href="#"> Our team</a></li>
+									<li><a href="#"> Careers</a></li>
+									<li><a href="#"> Investors</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-2 col-xs-4  top" class="foot-links">
+								<h4>Support</h4>
+								<ul>
+									<li><a href="#"> Documentation</a></li>
+									<li><a href="#"> Community</a></li>
+									<li><a href="#"> Get in Touch</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 col-xs-12  top">
+								<h4>Subscribe to our newsletter</h4>
+								<ul class="foot-info">
+									<li><a href="#"> Receive our latest news and promotions in your inbox!</a></li>
+								</ul>
+									<div id="input_container">
+										<input class="form-control subscr_form my-0 py-1" type="text" id="input" placeholder="Your email address">
+										<a href="#" class="arrow-right"><i class="fas fa-arrow-right"></i></a>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="copy-soc">
+							<div class="copy">
+								Copyright © <script>document.write(new Date().getFullYear());</script>. All rights reserved.
+							</div>
+							<div class="soc">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook-square"></i> </a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</footer>
+		</section>
+		<!-- End contact-->
+	</div>		
+
+	<script src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script src="./assets/js/jquery-ui.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/fontawesome.all.min.js"></script>
+	<script src="./assets/js/universal-parallax.js"></script>
+	<script src="./assets/js/index.js"></script>
+	<script>
+		new universalParallax().init({
+			speed: 4
+		});
+	</script>
+</body>
+</html>
